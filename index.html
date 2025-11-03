@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Poder da Disciplina - Transforme sua vida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cor-fundo: #000000;
+            --cor-texto: #ffffff;
+            --cor-titulo: #ffc107; /* Amarelo para Títulos e Garantia */
+            --cor-destaque: #e74c3c; /* Vermelho para Destaques (Escassez/Texto e Rótulo do Título) */
+            --cor-sucesso: #2ecc71; /* Verde para Botão CTA e Destaque de Benefício */
+            --cor-beneficio-titulo: #90ee90; /* Verde Claro para Títulos de Benefício */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            line-height: 1.6;
+        }
+
+        .header-top {
+            background-color: var(--cor-destaque);
+            text-align: center;
+            padding: 10px 15px;
+            font-weight: bold;
+            font-size: 0.9em;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 40px 0;
+            margin-bottom: 30px;
+        }
+
+        /* Título Principal */
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif; /* Aplica a fonte Montserrat */
+            color: var(--cor-texto); /* Texto branco em cima do rótulo vermelho */
+            font-size: 3em;
+            margin-bottom: 10px;
+            background-color: var(--cor-destaque); /* Fundo vermelho para o rótulo */
+            padding: 15px 0; /* Padding para dar o formato retangular */
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4); /* Sombra para destacar o rótulo */
+            border-radius: 5px; /* Bordas levemente arredondadas */
+        }
+        /* Ajuste para telas menores */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2.2em;
+                padding: 10px 0;
+            }
+        }
+
+
+        .hero h2 {
+            font-size: 1.5em;
+            font-weight: 300;
+            margin-top: 0;
+            color: var(--cor-texto);
+        }
+
+        .hero p {
+            color: #ccc;
+            margin-top: 30px;
+            font-size: 1.1em;
+        }
+        
+        /* Seções Gerais */
+        .section {
+            padding: 30px 0;
+            border-top: 1px solid #333;
+        }
+
+        .section h2 {
+            color: var(--cor-titulo);
+            font-size: 2em;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--cor-destaque);
+            padding-left: 10px;
+        }
+
+        .section-light p {
+            font-size: 1.1em;
+        }
+
+        /* Bullet Points/Conquistas */
+        .conquests {
+            list-style: none;
+            padding: 0;
+        }
+        .conquests li {
+            background: #1a1a1a;
+            margin-bottom: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            text-align: left;
+            border-left: 5px solid var(--cor-beneficio-titulo); 
+        }
+        .conquests strong {
+            color: var(--cor-beneficio-titulo);
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        /* Destaques (Ex: Imaginação) */
+        .imagine {
+            background-color: #111;
+            padding: 40px;
+            text-align: center;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        .imagine h2 {
+            color: var(--cor-destaque);
+            font-size: 1.8em;
+            border: none;
+            padding: 0;
+        }
+        .imagine ul {
+            list-style: none;
+            padding: 0;
+        }
+        .imagine li {
+            margin: 15px 0;
+            color: #ddd;
+            font-size: 1.1em;
+        }
+        
+        /* CTA Final */
+        .cta-final {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .cta-final p {
+            font-size: 1.4em;
+            margin-bottom: 20px;
+        }
+        
+        /* Botão CTA Principal */
+        .cta-button {
+            display: block;
+            background-color: var(--cor-sucesso); 
+            color: #000; 
+            padding: 8px 40px; 
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 8px;
+            font-size: 1.3em; 
+            transition: background-color 0.3s;
+            margin: 20px auto 30px auto;
+            max-width: 350px;
+            box-shadow: 0 4px 15px rgba(46, 204, 113, 0.5); 
+            text-transform: uppercase;
+            white-space: nowrap; 
+        }
+
+        .cta-button:hover {
+            background-color: #27ae60;
+        }
+
+        /* Botão de Garantia */
+        .guarantee-box {
+            background-color: var(--cor-titulo);
+            color: var(--cor-texto);
+            padding: 15px; 
+            border-radius: 8px;
+            text-align: center;
+            font-weight: normal; 
+            font-size: 1em;
+            margin-top: 30px;
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Destaque de Texto */
+        .red-highlight {
+            color: var(--cor-destaque);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-top">
+        🚨 ATENÇÃO: Acesso Imediato Liberado por Tempo Limitado!
+    </div>
+
+    <div class="container">
+        
+        <header class="hero">
+            <h1>🔥 O Poder da Disciplina</h1>
+            <h2>O método que transforma pessoas comuns em <span class="red-highlight">máquinas de resultados</span></h2>
+            
+            <p>Você já percebeu como tem gente que parece ter um “chip diferente”?
+            <br>Acordam cedo, cumprem metas, cuidam do corpo, estudam, trabalham e ainda têm tempo pra viver bem.
+            <br>A diferença não é sorte.
+            <br>É <span class="red-highlight">disciplina</span> — e agora você vai aprender a dominar esse poder.</p>
+        </header>
+
+        <section id="method" class="section section-light">
+            <h2>💡 O que é o Método?</h2>
+            <p>Um passo a passo prático pra você <span class="red-highlight">reprogramar sua mente</span>, eliminar a procrastinação e construir hábitos que te levam direto ao sucesso pessoal, físico e financeiro.</p>
+            
+            <p>Sem fórmulas mágicas.
+            <br>Sem motivação passageira.
+            <br>Apenas um método comprovado pra colocar sua vida nos trilhos — de forma simples, real e duradoura.</p>
+        </section>
+        
+        <section id="conquests" class="section">
+            <h2>🚀 O que você vai conquistar:</h2>
+            <ul class="conquests">
+                <li>
+                    <strong>✅ Foco absoluto:</strong> aprenda a manter a atenção no que importa, mesmo quando tudo tenta te distrair.
+                </li>
+                <li>
+                    <strong>✅ Produtividade explosiva:</strong> descubra como fazer em 2 horas o que antes levava o dia inteiro.
+                </li>
+                <li>
+                    <strong>✅ Corpo e mente alinhados:</strong> vença o cansaço, a preguiça e o desânimo com técnicas práticas.
+                </li>
+                <li>
+                    <strong>✅ Controle emocional:</strong> lide melhor com ansiedade e pensamentos sabotadores.
+                </li>
+                <li>
+                    <strong>✅ Crescimento financeiro:</strong> use a disciplina pra organizar sua vida e aumentar seus resultados.
+                </li>
+                <li>
+                    <strong>✅ Constância real:</strong> pare de começar e parar — torne a ação um hábito natural.
+                </li>
+            </ul>
+        </section>
+
+        <section class="imagine">
+            <h2>🔥 Imagine isso daqui a 30 dias:</h2>
+            <ul>
+                <li>Você acordando com energia e clareza do que precisa fazer;</li>
+                <li>Cumprindo suas metas sem precisar de “motivação”;</li>
+                <li>Sentindo orgulho de quem está se tornando;</li>
+                <li>E vendo os resultados começarem a aparecer em todas as áreas da sua vida.</li>
+            </ul>
+        </section>
+        
+        <section class="cta-final">
+            <h2>⚡ A escolha é sua:</h2>
+            <p>
+                Continuar preso na rotina que te cansa...
+                <br>Ou dar o primeiro passo pra construir uma vida de evolução, liberdade e <span class="red-highlight">resultados reais</span>.
+            </p>
+
+            <a href="https://pay.kirvano.com/313e7bb4-5267-4c0f-ac79-035801c2e983?aff=a52636f9-b1da-4493-88d6-6bc7d82f4b29" class="cta-button">
+                👉 ACESSE AGORA O MÉTODO
+            </a>
+            
+            <p>Domine sua mente. Mude seu corpo. Transforme sua vida.</p>
+
+            <div class="guarantee-box">
+                🛡️ GARANTIA DE 7 DIAS. Satisfação ou seu acesso cancelado, sem perguntas. Risco zero para você.
+            </div>
+        </section>
+
+    </div>
+    
+    <footer>
+        <p style="text-align: center; color: #555; font-size: 0.8em; padding: 20px;">
+            Desenvolvido para Mudar Sua Vida.
+        </p>
+    </footer>
+
+</body>
+</html>
